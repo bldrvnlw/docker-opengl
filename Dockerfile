@@ -8,6 +8,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
   net-tools \
   openbox \
   python-pip \
+  tmux \
   sudo \
   supervisor \
   tint2 \
@@ -50,7 +51,7 @@ ENV DISPLAY :0
 
 WORKDIR /root
 
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
+CMD ["/usr/bin/init-screen.sh"]
 
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE

@@ -5,7 +5,7 @@ ORG = ikeyasu
 IMAGE = opengl
 
 # Docker TAG
-TAG = ubuntu16.04
+TAG = ubuntu16.04-tmux
 
 build:
 	docker build \
