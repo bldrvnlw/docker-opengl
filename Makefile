@@ -5,7 +5,7 @@ ORG = ikeyasu
 IMAGE = opengl
 
 # Docker TAG
-TAG = cuda8.0-cudnn5-devel-ubuntu16.04-tmux
+TAG = cuda9.1-cudnn7-devel-ubuntu16.04-tmux
 
 build:
 	docker build \
